@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration FORM</title>
+    <!--<link rel="stylesheet" href="style.css"/>-->
+    <script>
+        .container{
+    border: 4px solid black;
+    height: 600px;
+    width: 1320px;
+    margin: auto;
+    background-color: rgb(18, 72, 94);
+    margin-top: 40px;
+    
+}
+.eve{
+    text-align: center;
+    font-style:Times New Roman;
+}
+.body{
+    border: 3px solid rgb(17, 2, 2);
+    background-color:#4993a5 ;
+    height: 430px;
+    width: 800px;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    display: flex;
+}
+#box{
+    flex: 1;
+    border: 2px solid rgb(8, 1, 1);
+   height: 100px;
+    max-width: 100px;
+    margin: 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    background-color: rgb(235, 232, 213);
+
+    }
+
+.content{
+    display: flex ;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 30px;
+    gap: 2rem;
+    margin-top: 70px;
+    }
+    
+ .btn{
+    border-radius: 4px;
+     margin-top: 30px; 
+     cursor: pointer;
+    margin-left: 100px;
+    padding: 5px;
+    background-color: rgb(139, 0, 58);
+    color: rgb(230, 235, 232);
+ }      
+.btn1{
+    border-radius: 4px;
+     margin-top: 10px; 
+     cursor: pointer;
+    padding: 5px;
+    margin-left: 50px;
+    background-color: rgb(216, 224, 214);
+    color: whitesmoke;
+}  
+label{
+    width: 200px;
+    display: inline-block;
+    }
+
+
+button:hover{
+    background-color: rgb(95, 212, 41);
+    color:black;
+}
+        </script>
+</head>
+<body>
+    <div class="container">
+        <header class="eve">
+            <h1>Event 1</h1>
+            <h3>Number of seats available: 23</h3>
+        </header>
+        <form>
+            <div id="main">
+                <main class="body">
+                    <span id="box">Image</span>
+                    <div class="content">
+                        <div>
+                            <label for="name">Name:</label>
+                            <input 
+                                type="text"
+                                name="name"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input 
+                                type="text"
+                                name="email"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label for="phone">Mobile no:</label>
+                            <input 
+                                type="number"                    
+                                name="phone"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label for="seats">Number of seats :</label>
+                            <input 
+                                type="number"
+                                name="seats"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label for="attendee2-name">Name of Attendee 2:</label>
+                            <input 
+                                type="text"
+                                id="attendee2-name"
+                                name="attendee2-name"
+                            /><br/>
+                            <button class="btn">Submit</button>
+                            <button class="btn">Cancel</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
